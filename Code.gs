@@ -3,7 +3,7 @@ function main() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   if (spreadsheet.getName() != "options") { return; }
   var folders = folderMaker(spreadsheet);
-  console.log(folders);
+  //console.log(folders);
   var tbpFileIDs = fileMaker(folders);
   //makeSmartSheets(folders[5],tbpFileIDs);
 }
